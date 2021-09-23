@@ -24,7 +24,7 @@ on GCP using the open source version of Vault 1.8+.
     - GCP SSL Certificates
     - [Secret Manager API](https://cloud.google.com/secret-manager/docs/reference/rest)
 
-- To deploy without an existing VPC, use the [example VPC](https://github.com/hashicorp/terraform-gcp-vault-ent-starter/tree/main/examples/gcp-vpc)
+- To deploy without an existing VPC, use the [example VPC](https://github.com/hashicorp/terraform-gcp-vault-starter/tree/main/examples/gcp-vpc)
   code to build out the pre-requisite environment. Ensure you are selecting a
   region that has at least three [
   zones](https://cloud.google.com/compute/docs/regions-zones).
@@ -35,7 +35,7 @@ on GCP using the open source version of Vault 1.8+.
   - Subnet: a single subnet in which to deploy the Vault cluster
   - One Cloud Router and [Cloud NAT](https://cloud.google.com/nat/docs/overview)
 
-- Use the [example](https://github.com/hashicorp/terraform-gcp-vault-ent-starter/tree/main/examples/gcp-tls) code to create TLS certs
+- Use the [example](https://github.com/hashicorp/terraform-gcp-vault-starter/tree/main/examples/gcp-tls) code to create TLS certs
   and store them in [GCP Secret Manager](https://cloud.google.com/secret-manager/docs/overview)
   along with importing them into a [GCP self managed SSL Certificate](https://cloud.google.com/load-balancing/docs/ssl-certificates)
 
@@ -133,4 +133,4 @@ $ vault operator raft autopilot get-config
 ## License
 
 This code is released under the Mozilla Public License 2.0. Please see
-[LICENSE](https://github.com/hashicorp/terraform-gcp-vault-ent-starter/blob/main/LICENSE) for more details.
+[LICENSE](https://github.com/hashicorp/terraform-gcp-vault-starter/blob/main/LICENSE) for more details.
