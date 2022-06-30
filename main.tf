@@ -2,6 +2,7 @@ module "iam" {
   source = "./modules/iam"
 
   key_ring_id          = module.kms.key_ring_id
+  project_id           = var.project_id
   resource_name_prefix = var.resource_name_prefix
   tls_secret_id        = var.tls_secret_id
 }
